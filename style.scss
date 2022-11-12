@@ -1,0 +1,38 @@
+$color1: red;
+$color2: blue;
+$color3: green;
+$div_border: 1px solid red;
+$article_border: 1px solid green;
+$screen: flex;
+$underline: 1px solid blue;
+$h1_margin: 25px auto 8px;
+
+div {
+    display: $screen;
+    flex-direction: column;
+    border: $div_border;
+    align-items: center;
+}
+h1 {
+    color: $color3;
+    border-bottom: $underline;
+    width: 32ch;
+    margin: $h1_margin;
+}
+section {
+    display: flex;
+    margin: 15px;
+}
+article {
+    border: $article_border;
+    padding: 25px;
+    text-align: center;
+}
+p {
+    &.odd {
+        color: $color2;
+    }
+    &.even {
+        color: $color1;
+    }
+}
